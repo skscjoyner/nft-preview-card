@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --main-bg: hsl(217, 54%, 11%);
+  --card-bg: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+
+
+.attribution { 
+  color: var(--w);
+  font-size: 11px;
+  text-align: center;
+  color: var(--white)
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit" ,sans-serif;
+  font-size: 18px;
+  background-color: var(--main-bg); 
+}
+
+.card {
+  width: 400px;
+  line-height: 25px;
+  font-weight: 300;
+  border-radius: 10px;
+  margin: 85px auto;
+  padding: 20px 20px;
+  color: var(--soft-blue);
+  background-color: var(--card-bg);
+  position: relative;
+}
+
+.card h1 {
+  font-weight: 600;
+  color: var(--white);
+  line-height: 30px;
+  font-size: 18px;
+  margin: 20px 0 10px 0;
+}
+
+h1:hover, .author:hover {
+  color: var(--cyan);
+  cursor: pointer;
+}
+
+.cube {
+  width: 100%;
+  border-radius: 10px;
+} 
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 400;
+  margin: 15px 0;  
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 15px;
+}
+
+.price {
+  color: var(--cyan);
+}
+
+.time, .price {
+  display: flex;
+  align-items: center;
+}
+
+.time img, .price img {
+  margin-right: 5px;
+}
+
+.view-overlay {
+  background-color: var(--cyan);
+  position: absolute;
+  bottom: 0;
+  height: 360px;
+  width: 360px;
+  top: 20px;
+  left: 20px;
+  border-radius: 10px;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  
+}
+
+.view-overlay:hover {
+  opacity: .6;
+  transition: 500ms;
+}
+
+.owner {
+  display: flex;
+  align-items: center;
+}
+
+.photo {
+  width: 50px;
+  margin-right: 20px;
+  border: 1px solid var(--white);
+  border-radius: 100%;
+}
+
+.owner span {
+  color: var(--white);
+}
+
+.owner span:hover {
+  color: var(--cyan);
+  cursor: pointer;
+}
+
